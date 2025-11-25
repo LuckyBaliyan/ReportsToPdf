@@ -11,10 +11,6 @@ import AllReports from "./pages/reports/AllReports";
 import ReportDetails from "./pages/reports/ReportDetails";
 import CreateReport from "./pages/reports/CreateReport";
 
-import TemplatesList from "./pages/templates/Templateslist";
-import TemplateDetails from "./pages/templates/TemplateDetails";
-import CreateTemplate from "./pages/templates/CreateTemplate";
-
 import ReportFrom from './pages/reports/ReportFrom';
 
 import MyReports from "./pages/reports/MyReports";
