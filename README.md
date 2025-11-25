@@ -11,6 +11,10 @@ This project fulfills all the minimum requirements described in the original ass
 
 This project allows users to browse available reports, view detailed report pages with charts, tables, and images, and export each report as a professionally styled A4 PDF.
 The backend serves structured JSON report data, and the frontend transforms that data into a print-ready layout with a PDF export option.
+
+![App Screenshot](./screenshots/s1.png)
+
+
 ## Tech Stack
 
 **Client:** React, TailwindCSS
@@ -84,7 +88,7 @@ Returns a server-generated PDF
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/LuckyBaliyan/ReportsToPdf.git
 ```
 
 Go to the project directory
