@@ -88,7 +88,7 @@ Returns a server-generated PDF
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/LuckyBaliyan/ReportsToPdf.git
 ```
 
 Go to the project directory
