@@ -2,7 +2,7 @@
 # 📄 Design Report Generator (React + Node/Express + PDF)
 
 A full-stack application that generates clean, print-ready PDF design reports using a React frontend and a Node.js/Express backend.
-This project fulfills all the minimum requirements described in the original assignment.
+This project fulfills all the  requirements described in the assignment.
 
 
 
