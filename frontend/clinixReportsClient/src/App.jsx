@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ApiTest from './ApiTest'
 import './styles/global.css';
 
 import Layout from "./components/layouts/Layout";
