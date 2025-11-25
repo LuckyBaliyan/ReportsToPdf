@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title><%= report.title %></title>
+
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #222;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+    }
+
+    .meta {
+      font-size: 12px;
+      margin-top: 8px;
+      color: #444;
+    }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    /* Metrics layout */
+    .metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .metric {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px 12px;
+      min-width: 120px;
+      background: #fafafa;
+      font-size: 13px;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    /* Chart placeholder */
+    .chart ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 5px;
+    }
+
+    .footer-watermark {
+        position: fixed;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%) rotate(-30deg);
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.06);
+        pointer-events: none;
+        user-select: none;
+        z-index: 0;
+        white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <h1><%= report.title %></h1>
+
+    <div class="meta">
+      <strong>Date:</strong> <%= report.date %> |
+      <strong>Patient:</strong> <%= report.patient.name %> |
+      <strong>Barcode:</strong> <%= report.patient.barcode %>
+    </div>
+  </header>
+
+  
+  <div class="section">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li>Overview</li>
+      <% report.sections.forEach((s) => { %>
+        <li><%= s.heading %></li>
+      <% }) %>
+      <li>Metrics</li>
+      <li>Data Table</li>
+      <li>Chart Data</li>
+    </ol>
+  </div>
+
+
+  <% report.sections.forEach((s) => { %>
+    <div class="section">
+      <h2><%= s.heading %></h2>
+      <p><%= s.content %></p>
+    </div>
+  <% }); %>
+
+  <div class="section">
+    <h2>Metrics</h2>
+
+    <div class="metrics">
+      <% Object.keys(report.metrics).forEach((key) => { %>
+        <div class="metric">
+          <strong><%= key %></strong><br />
+          <%= report.metrics[key] %>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h2>Chart Data Overview</h2>
+    <ul>
+      <% for (let i = 0; i < report.chartData.labels.length; i++) { %>
+        <li>
+          <%= report.chartData.labels[i] %> : <%= report.chartData.values[i] %>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+
+
+    <h2>Data Table</h2>
+
+    <table>
+      <% report.table.forEach((row, rowIndex) => { %>
+        <tr>
+          <% row.forEach((col) => { %>
+            <% if (rowIndex === 0) { %>
+              <th><%= col %></th>
+            <% } else { %>
+              <td><%= col %></td>
+            <% } %>
+          <% }) %>
+        </tr>
+      <% }); %>
+    </table>
+  </div>
+
+  <div class="footer-watermark">
+  Clinix Reports • <%= new Date().toLocaleDateString() %>
+  </div>
+
+</body>
+</html>
+

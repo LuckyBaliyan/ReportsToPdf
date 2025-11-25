@@ -1,0 +1,218 @@
+[
+  {
+    "id": "rpt-001",
+    "title": "Omega Fatty Acid Profile",
+    "date": "2024-05-12",
+    "type": "omega",
+    "patient": {
+      "name": "John Doe",
+      "species": "human",
+      "source": "SELF",
+      "barcode": "01BH32-INTR-LHC"
+    },
+    "metrics": {
+      "EPA": 1.4,
+      "DHA": 4.0,
+      "AA": 9.6,
+      "LA": 25.8,
+      "GLA": 0.3,
+      "Omega_Index": 5.4,
+      "AA_EPA": 6.85,
+      "n6_n3": 4.52
+    },
+    "sections": [
+      {
+        "heading": "Overview",
+        "content": "This report summarizes the patient's omega fatty acid distribution."
+      },
+      {
+        "heading": "Interpretation",
+        "content": "Omega Index within this range indicates moderate cardiovascular efficiency."
+      }
+    ],
+    "table": [
+      ["Component", "Value"],
+      ["EPA", "1.4 %"],
+      ["DHA", "4.0 %"],
+      ["AA", "9.6 %"],
+      ["Omega Index", "5.4"]
+    ],
+    "chartData": {
+      "labels": ["EPA", "DHA", "AA", "GLA"],
+      "values": [1.4, 4.0, 9.6, 0.3]
+    }
+  },
+  {
+    "id": "rpt-002",
+    "title": "Advanced Omega Diagnostic Report",
+    "date": "2024-06-22",
+    "type": "omega-advanced",
+    "patient": {
+      "name": "Emily Carter",
+      "species": "human",
+      "source": "CLINIC",
+      "barcode": "02BH12-ADVC-LHC"
+    },
+    "metrics": {
+      "EPA": 2.1,
+      "DHA": 5.7,
+      "AA": 8.3,
+      "LA": 23.4,
+      "GLA": 0.6,
+      "Omega_Index": 6.8,
+      "AA_EPA": 3.95,
+      "n6_n3": 3.4
+    },
+    "sections": [
+      {
+        "heading": "Clinical Summary",
+        "content": "This advanced analysis provides deeper insight into fatty acid ratios."
+      },
+      {
+        "heading": "Risk Assessment",
+        "content": "High DHA levels indicate strong anti-inflammatory potential."
+      }
+    ],
+    "table": [
+      ["Component", "Value"],
+      ["EPA", "2.1 %"],
+      ["DHA", "5.7 %"],
+      ["AA", "8.3 %"],
+      ["Omega Index", "6.8"]
+    ],
+    "chartData": {
+      "labels": ["EPA", "DHA", "AA", "GLA"],
+      "values": [2.1, 5.7, 8.3, 0.6]
+    }
+  },
+  {
+    "id": "rpt-003",
+    "title": "Inflammation Biomarker Analysis",
+    "date": "2024-04-10",
+    "type": "inflammation",
+    "patient": {
+      "name": "Michael Smith",
+      "species": "human",
+      "source": "SELF",
+      "barcode": "05BH98-IMFL-LHC"
+    },
+    "metrics": {
+      "EPA": 0.9,
+      "DHA": 2.8,
+      "AA": 14.2,
+      "LA": 28.1,
+      "GLA": 0.2,
+      "Omega_Index": 3.7,
+      "AA_EPA": 15.7,
+      "n6_n3": 6.9
+    },
+    "sections": [
+      {
+        "heading": "General Findings",
+        "content": "Inflammation markers are moderately elevated."
+      },
+      {
+        "heading": "Recommendation",
+        "content": "Increase dietary omega-3 intake to reduce inflammation."
+      }
+    ],
+    "table": [
+      ["Component", "Value"],
+      ["EPA", "0.9 %"],
+      ["DHA", "2.8 %"],
+      ["AA", "14.2 %"],
+      ["Omega Index", "3.7"]
+    ],
+    "chartData": {
+      "labels": ["EPA", "DHA", "AA", "GLA"],
+      "values": [0.9, 2.8, 14.2, 0.2]
+    }
+  },
+  {
+    "id": "rpt-004",
+    "title": "General Fatty Acid Health Report",
+    "date": "2024-02-18",
+    "type": "general",
+    "patient": {
+      "name": "Sophia Turner",
+      "species": "human",
+      "source": "CLINIC",
+      "barcode": "07BH55-GNHL-LHC"
+    },
+    "metrics": {
+      "EPA": 1.2,
+      "DHA": 3.5,
+      "AA": 10.5,
+      "LA": 24.7,
+      "GLA": 0.4,
+      "Omega_Index": 4.9,
+      "AA_EPA": 8.75,
+      "n6_n3": 5.1
+    },
+    "sections": [
+      {
+        "heading": "Summary",
+        "content": "Fatty acid levels are generally within normal ranges."
+      },
+      {
+        "heading": "Interpretation",
+        "content": "The Omega Index falls in a healthy zone."
+      }
+    ],
+    "table": [
+      ["Component", "Value"],
+      ["EPA", "1.2 %"],
+      ["DHA", "3.5 %"],
+      ["AA", "10.5 %"],
+      ["Omega Index", "4.9"]
+    ],
+    "chartData": {
+      "labels": ["EPA", "DHA", "AA", "GLA"],
+      "values": [1.2, 3.5, 10.5, 0.4]
+    }
+  },
+  {
+    "id": "rpt-005",
+    "title": "Comprehensive Omega & Lipid Report",
+    "date": "2024-07-01",
+    "type": "comprehensive",
+    "patient": {
+      "name": "David Wilson",
+      "species": "human",
+      "source": "SELF",
+      "barcode": "09BH20-CMPR-LHC"
+    },
+    "metrics": {
+      "EPA": 1.9,
+      "DHA": 6.1,
+      "AA": 7.1,
+      "LA": 22.9,
+      "GLA": 0.5,
+      "Omega_Index": 7.2,
+      "AA_EPA": 3.73,
+      "n6_n3": 2.9
+    },
+    "sections": [
+      {
+        "heading": "Findings",
+        "content": "This comprehensive analysis shows excellent omega balance."
+      },
+      {
+        "heading": "Insights",
+        "content": "Low inflammatory markers indicate a strong anti-inflammatory profile."
+      }
+    ],
+    "table": [
+      ["Component", "Value"],
+      ["EPA", "1.9 %"],
+      ["DHA", "6.1 %"],
+      ["AA", "7.1 %"],
+      ["Omega Index", "7.2"]
+    ],
+    "chartData": {
+      "labels": ["EPA", "DHA", "AA", "GLA"],
+      "values": [1.9, 6.1, 7.1, 0.5]
+    }
+  }
+]
+

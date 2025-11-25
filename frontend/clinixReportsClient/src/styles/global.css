@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body{
+  font-family: "DM Sans", sans-serif;
+}
+
+:root{
+    --accent:#7ED956;
+}
+
+input{
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    outline: 0;
+    padding: .4em .6em;
+}
+
+.hero{
+   font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
